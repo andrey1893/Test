@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+    font-family: 'open-sans', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+
+/* container =======
+=====================*/
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    
+}
+
+/*Header Делаем внутренние отступы сверху и снизу. 
+Применили флексы чтобы расположить в одну линию и по разным углам*/
+
+.header {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 38px 0;
+    border-bottom: 1px solid #515369;
+
+}
+
+/* Nav с помощью псевдокласса убрали постоянное подчеркивание, оно появляется только при наводе*/
+
+.nav {
+    display: flex;
+}
+
+.nav_link {
+    margin-left: 50px ;
+    opacity: 0.75;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav_link:hover {
+    text-decoration: underline ;
+    opacity: 1;
+
+}
+
+/* intro =========
+==================*/
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 750px;
+    padding-top: 30px;
+    background: url('img/foto/2-layers.png') center center/cover no-repeat;
+}
+.intro_inner{
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto;
+}
+.intro-title {
+    color: #ffffff;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 75px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.intro_subtitle {
+    margin-top: 41px;
+    color: #ffffff;
+    font-family: 'open-sans', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: center;
+}
+
+/* button=====
+============== */
+
+.btn {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 200px;
+    height: 46px;
+    background-color: #e84545;
+    text-align: center;
+    margin: 77px 356px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
